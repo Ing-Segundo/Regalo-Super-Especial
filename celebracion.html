@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebración de Aniversario ❤️</title>
+    <link rel="stylesheet" href="celebracion.css">
+</head>
+<body>
+    <!-- Canvas Principal para Partículas y fuegos artificiales -->
+    <canvas id="fxCanvas"></canvas>
+
+    <!-- Superposición de brillo y flash general -->
+    <div id="flashOverlay" class="flash-overlay"></div>
+
+    <!-- UI Overlay (Botones de control discretos) -->
+    <nav class="ui-controls">
+        <button id="btnReturn" class="ui-btn" aria-label="Volver al inicio">Volver ❤️</button>
+        <button id="btnAudio" class="ui-btn ui-btn-audio" aria-label="Control de Audio">
+            <span id="audioIcon">🎵</span>
+        </button>
+    </nav>
+
+    <!-- Contenedor Tipográfico Central -->
+    <main class="typography-container">
+        <div id="textTeAmo" class="cinematic-text text-te-amo">
+            <h1>TE AMO</h1>
+        </div>
+
+        <div id="textAnniversary" class="cinematic-text text-anniversary">
+            <h1 class="main-title">FELIZ ANIVERSARIO</h1>
+            <h2 class="sub-title">1 AÑO Y 3 MESES ❤️</h2>
+            <p class="love-quote">"Gracias por seguir compartiendo tu vida conmigo."</p>
+        </div>
+    </main>
+
+    <!-- Audio de Fondo -->
+    <audio id="bgMusic" src="assets/music/nuestra-cancion.mp3" preload="auto" loop></audio>
+
+    <script src="celebracion.js"></script>
+</body>
+</html>

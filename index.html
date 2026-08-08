@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para el amor de mi vida ❤️ | Nuestro Aniversario</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Canvas for Interactive Particles/Stars -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- Music Player Floating Widget -->
+    <div class="music-player" id="musicPlayer">
+        <button class="music-btn" id="musicToggle" aria-label="Reproducir/Pausar Canción">
+            <svg id="musicIconPlay" class="icon" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+            </svg>
+            <svg id="musicIconPause" class="icon hidden" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+            </svg>
+        </button>
+        <div class="music-info">
+            <span class="music-title">Nuestra Canción</span>
+            <span class="music-status">Toca para reproducir 🎵</span>
+        </div>
+        <audio id="bgMusic" loop src="assets/music/nuestra-cancion.mp3"></audio>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <main class="main-wrapper">
+
+        <!-- 1. HERO SECTION -->
+        <section class="hero-section" id="hero">
+            <div class="hero-content">
+                <div class="sparkle-badge">✨ Un regalo con todo mi corazón ✨</div>
+                <h1 class="hero-title">Para el amor de mi vida ❤️</h1>
+                <p class="hero-subtitle">1 año y 3 meses juntos</p>
+                <p class="hero-quote">"Hay cosas que a veces no sé cómo decirte... así que decidí escribirlas."</p>
+                <button class="btn-primary" id="startBtn">
+                    Tengo algo que decirte ❤️
+                </button>
+            </div>
+            
+            <div class="scroll-hint">
+                <span>Desliza para continuar</span>
+                <div class="arrow-down"></div>
+            </div>
+        </section>
+
+        <!-- FOTO 1: Nuestro Primer Recuerdo -->
+        <section class="photo-section" id="photo1-sec">
+            <div class="photo-card reveal">
+                <!-- FOTO 1: Nuestro primer recuerdo importante -->
+                <div class="photo-wrapper">
+                    <img src="assets/images/foto-1.png" alt="Nuestro primer recuerdo importante" loading="lazy" onerror="this.onerror=null; this.classList.add('placeholder-img');">
+                    <div class="photo-overlay">
+                        <span>Dónde todo comenzó... ✨</span>
+                    </div>
+                </div>
+                <p class="photo-caption">Uno de nuestros primeros recuerdos que guardo con tanto amor.</p>
+            </div>
+        </section>
+
+        <!-- 2. CARTA PRINCIPAL EN CAPÍTULOS -->
+        <section class="letter-section" id="letter">
+            <div class="section-header reveal">
+                <span class="section-tag">Carta Digital</span>
+                <h2 class="section-title">Lo que realmente quería decirte...</h2>
+                <div class="divider">🌸 💜 🌸</div>
+            </div>
+
+            <div class="chapters-container">
+                
+                <!-- CAPÍTULO 01 -->
+                <article class="chapter-card reveal">
+                    <div class="chapter-number">CAPÍTULO 01</div>
+                    <h3 class="chapter-title">Primero... quiero pedirte perdón.</h3>
+                    <div class="chapter-body">
+                        <p>Quiero darte una gran y sincera disculpa por todos estos días y por las malas semanas que hemos tenido ambos.</p>
+                        <p>Sé que a veces he hecho que te estreses demasiado por mis temas repetitivos. Sé que todo esto puede ser mucha vaina, pero en serio, no soy así porque quiera.</p>
+                        <p>A veces hay sentimientos que me llegan desde el corazón, especialmente ese miedo a perderte.</p>
+                    </div>
+                </article>
+
+                <!-- CAPÍTULO 02 -->
+                <article class="chapter-card reveal">
+                    <div class="chapter-number">CAPÍTULO 02</div>
+                    <h3 class="chapter-title">Hay algo que pocas veces digo.</h3>
+                    <div class="chapter-body">
+                        <p>Por los diferentes tratos, por la falta de tiempo, por la falta de compañía y por la falta de cuidado que hemos tenido ambos.</p>
+                        <p>Pero quiero disfrutar este día, si es posible, contigo.</p>
+                        <p class="highlight-text">Hoy cumplimos 1 año y 3 meses.</p>
+                    </div>
+                </article>
+
+                <!-- FOTO 2: Nuestro tiempo juntos -->
+                <div class="photo-card reveal photo-inline">
+                    <!-- FOTO 2: Un momento especial juntos que refleje el tiempo compartido -->
+                    <div class="photo-wrapper">
+                        <img src="assets/images/foto-2.png" alt="Un momento especial juntos" loading="lazy" onerror="this.onerror=null; this.classList.add('placeholder-img');">
+                        <div class="photo-overlay">
+                            <span>Momentos inolvidables ❤️</span>
+                        </div>
+                    </div>
+                    <p class="photo-caption">Cada momento a tu lado se ha quedado grabado en mi alma.</p>
+                </div>
+
+                <!-- CAPÍTULO 03 -->
+                <article class="chapter-card reveal">
+                    <div class="chapter-number">CAPÍTULO 03</div>
+                    <h3 class="chapter-title">Te amo más de lo que muchas veces sé expresar.</h3>
+                    <div class="chapter-body">
+                        <p>Tengo bastante tiempo contigo, pero en verdad te amo demasiado.</p>
+                        <p><strong>Me aterra perderte.</strong></p>
+                        <p>No siempre lo digo y muchas veces tampoco lo expreso, pero hay sentimientos que en ocasiones son simplemente indescriptibles.</p>
+                        <p>Sé que no siempre soy el mejor. Sé que no siempre logro sacarte una sonrisa. Sé que hay veces en las que me he sentido insuficiente.</p>
+                        <p>Pero todo lo que he pensado son puras palabras, porque todo lo que siento realmente es al contrario.</p>
+                    </div>
+                </article>
+
+                <!-- FOTO 3: Para la sección de disculpa / emoción -->
+                <div class="photo-card reveal photo-inline">
+                    <!-- FOTO 3: Fotografía emocional para la sección de disculpa y sentimientos -->
+                    <div class="photo-wrapper">
+                        <img src="assets/images/foto-3.png" alt="Fotografía emocional de nosotros" loading="lazy" onerror="this.onerror=null; this.classList.add('placeholder-img');">
+                        <div class="photo-overlay">
+                            <span>Sinceridad y amor verdadero 💜</span>
+                        </div>
+                    </div>
+                    <p class="photo-caption">Porque a pesar de todo, mi amor por ti nunca cambia.</p>
+                </div>
+
+                <!-- CAPÍTULO 04 -->
+                <article class="chapter-card reveal">
+                    <div class="chapter-number">CAPÍTULO 04</div>
+                    <h3 class="chapter-title">Sé que nos hemos descuidado.</h3>
+                    <div class="chapter-body">
+                        <p>Sé que por tu trabajo nuevo no hemos tenido tanto tiempo para hablar.</p>
+                        <p>Es como cuando yo estaba en mis estadías, solo que ahora es tu turno de estar ocupada con algo importante para ti.</p>
+                        <p>Y de corazón deseo que este trabajo, Dios quiera y así sea, sea para siempre y que todo vaya muy bien para ti.</p>
+                        <p>No sé tanto de tu trabajo ni mucho de ti durante esta semana. Nos hemos descuidado ambos.</p>
+                        <p>Pero sé que te amo demasiado. Y espero que ese amor también sea mutuo, recíproco y que todavía podamos sentirlo los dos.</p>
+                    </div>
+                </article>
+
+                <!-- CAPÍTULO 05 -->
+                <article class="chapter-card reveal">
+                    <div class="chapter-number">CAPÍTULO 05</div>
+                    <h3 class="chapter-title">Pero quiero seguir contigo.</h3>
+                    <div class="chapter-body">
+                        <p>Sé muy bien que no tengo muchas palabras lindas ni un gran repertorio de palabras. Pero a pesar de todo, anhelo estar contigo.</p>
+                        <p>Y si en algún momento te canso o ya no deseas estar conmigo, solo dímelo.</p>
+                        <p>Sé que muchas veces son tonterías que pienso, pero también sé que te he hecho pasar por mucho y no quiero cansarte más con mis temas.</p>
+                        <p>No quiero causar más vaina. Quiero estar feliz contigo. Quiero que nos cuidemos más. Quiero ser mejor pareja. Quiero que seamos mejores juntos. Quiero que nos pongamos más atención y cuidado los dos.</p>
+                    </div>
+                </article>
+
+                <!-- CAPÍTULO 06 -->
+                <article class="chapter-card reveal">
+                    <div class="chapter-number">CAPÍTULO 06</div>
+                    <h3 class="chapter-title">Hoy solo quiero estar contigo.</h3>
+                    <div class="chapter-body">
+                        <p>Si me permites este día estar contigo, deseo estar contigo felizmente.</p>
+                        <p>Si a ti también te gustaría lo mismo, hagamos lo que quieras.</p>
+                        <p>El juego que quieras. Si no sabes qué jugar, veamos anime. Hagamos llamada. Videollamada. Lo que sea. Pero juntos.</p>
+                        <p>No quiero ser solamente yo quien planee algo. También quiero que planeemos los dos juntos.</p>
+                        <p class="final-apology">Lo siento por todo, mi amor. Te amo. Y te amo en serio. Pero sobre todo quiero que tengamos un bonito día en nuestro aniversario.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FOTO 4: Recuerdo Reciente -->
+        <section class="photo-section" id="photo4-sec">
+            <div class="photo-card reveal">
+                <!-- FOTO 4: Recuerdo reciente que represente nuestra relación actual -->
+                <div class="photo-wrapper">
+                    <img src="assets/images/foto-4.png" alt="Nuestra relación actualmente" loading="lazy" onerror="this.onerror=null; this.classList.add('placeholder-img');">
+                    <div class="photo-overlay">
+                        <span>Nosotros hoy 🌙</span>
+                    </div>
+                </div>
+                <p class="photo-caption">Seguimos construyendo nuestra historia, paso a paso.</p>
+            </div>
+        </section>
+
+        <!-- 3. SECCIÓN "LO QUE QUIERO CONTIGO" -->
+        <section class="wishes-section" id="wishes">
+            <div class="section-header reveal">
+                <span class="section-tag">Mis Promesas</span>
+                <h2 class="section-title">Lo que quiero contigo...</h2>
+            </div>
+
+            <div class="wishes-grid">
+                <div class="wish-card reveal">
+                    <span class="wish-icon">❤️</span>
+                    <span class="wish-text">Cuidarnos más</span>
+                </div>
+                <div class="wish-card reveal">
+                    <span class="wish-icon">💜</span>
+                    <span class="wish-text">Escucharnos más</span>
+                </div>
+                <div class="wish-card reveal">
+                    <span class="wish-icon">🌙</span>
+                    <span class="wish-text">Pasar más tiempo juntos</span>
+                </div>
+                <div class="wish-card reveal">
+                    <span class="wish-icon">✨</span>
+                    <span class="wish-text">Ser mejores juntos</span>
+                </div>
+                <div class="wish-card reveal">
+                    <span class="wish-icon">🎮</span>
+                    <span class="wish-text">Jugar juntos</span>
+                </div>
+                <div class="wish-card reveal">
+                    <span class="wish-icon">🎬</span>
+                    <span class="wish-text">Ver anime juntos</span>
+                </div>
+                <div class="wish-card reveal">
+                    <span class="wish-icon">📞</span>
+                    <span class="wish-text">Hacer llamadas</span>
+                </div>
+                <div class="wish-card reveal">
+                    <span class="wish-icon">🫶</span>
+                    <span class="wish-text">Disfrutar nuestros momentos</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SECCIÓN INTERACTIVA "¿QUÉ HACEMOS HOY?" -->
+        <section class="interactive-section" id="interactive">
+            <div class="section-header reveal">
+                <span class="section-tag">Tú Eliges</span>
+                <h2 class="section-title">¿Qué hacemos hoy?</h2>
+                <p class="section-subtitle">Haz clic en una opción para ver mi respuesta ❤️</p>
+            </div>
+
+            <div class="options-container reveal">
+                <button class="option-btn" data-choice="jugar">🎮 Jugar</button>
+                <button class="option-btn" data-choice="anime">🎬 Ver anime</button>
+                <button class="option-btn" data-choice="llamada">📞 Llamada</button>
+                <button class="option-btn" data-choice="videollamada">📹 Videollamada</button>
+                <button class="option-btn special" data-choice="loquetuquieras">❤️ Lo que tú quieras</button>
+            </div>
+
+            <div class="choice-response-box" id="choiceResponse">
+                <div class="response-placeholder">Selecciona una opción para descubrir qué planeamos juntos ✨</div>
+                <p class="response-text" id="responseText"></p>
+            </div>
+        </section>
+
+        <!-- 5. CONTADOR DE TIEMPO -->
+        <section class="timer-section" id="timerSection">
+            <div class="section-header reveal">
+                <span class="section-tag">Nuestro Tiempo</span>
+                <h2 class="section-title">Todo este tiempo contigo...</h2>
+            </div>
+
+            <div class="main-time-badge reveal">
+                <div class="badge-item">
+                    <span class="badge-num">1</span>
+                    <span class="badge-lbl">Año</span>
+                </div>
+                <div class="badge-sep">&</div>
+                <div class="badge-item">
+                    <span class="badge-num">3</span>
+                    <span class="badge-lbl">Meses</span>
+                </div>
+            </div>
+
+            <p class="timer-intro reveal">Y seguimos contando cada segundo de este hermoso viaje juntos:</p>
+
+            <div class="live-counter reveal" id="liveCounter">
+                <div class="counter-box">
+                    <span class="counter-value" id="countDays">00</span>
+                    <span class="counter-label">Días</span>
+                </div>
+                <div class="counter-box">
+                    <span class="counter-value" id="countHours">00</span>
+                    <span class="counter-label">Horas</span>
+                </div>
+                <div class="counter-box">
+                    <span class="counter-value" id="countMinutes">00</span>
+                    <span class="counter-label">Minutos</span>
+                </div>
+                <div class="counter-box">
+                    <span class="counter-value" id="countSeconds">00</span>
+                    <span class="counter-label">Segundos</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOTO 5: Fotografía Final -->
+        <section class="photo-section" id="photo5-sec">
+            <div class="photo-card reveal">
+                <!-- FOTO 5: Fotografía final especial de los dos juntos -->
+                <div class="photo-wrapper photo-large">
+                    <img src="assets/images/foto-5.png" alt="Nuestra foto especial juntos" loading="lazy" onerror="this.onerror=null; this.classList.add('placeholder-img');">
+                    <div class="photo-overlay">
+                        <span>Juntos por siempre ❤️</span>
+                    </div>
+                </div>
+                <p class="photo-caption">Tú y yo contra el mundo.</p>
+            </div>
+        </section>
+
+        <!-- 6. EXPERIENCIA AL FINAL -->
+        <section class="final-section" id="final">
+            <div class="final-card reveal">
+                <span class="final-tag">Y si tuviera que resumir todo esto...</span>
+                
+                <p class="final-p1">"No quiero una relación perfecta."</p>
+                <p class="final-p2">"Quiero una relación en la que los dos queramos seguir eligiéndonos."</p>
+                
+                <h2 class="final-love">Te amo, mi amor. ❤️</h2>
+                
+                <div class="final-anniversary">
+                    ✨ Feliz aniversario de 1 año y 3 meses ✨
+                </div>
+                
+                <div class="final-hearts">🌸 💖 💜 💖 🌸</div>
+            </div>
+            <div style="text-align: center; margin: 50px 0;">
+                <a href="celebracion.html" id="btnCelebration" class="btn-celebracion">
+                    PRESIONA AQUÍ ❤️
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Hecho con todo el amor del mundo para ti ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
